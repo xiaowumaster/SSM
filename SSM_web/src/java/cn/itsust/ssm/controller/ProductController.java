@@ -20,12 +20,18 @@ public class ProductController {
     @Autowired
     private IProductService iProductService;
 
+    @RequestMapping("/save.do")
+    public String save(Product product) {
+        iProductService.save(product);
+        return "redirect:findAll.do";
+    }
+
     @RequestMapping("/findAll.do")
     public ModelAndView findAll() throws Exception {
         ModelAndView mv = new ModelAndView();
         List<Product> list = iProductService.findAll();
         mv.addObject("productList", list);
-        mv.setViewName("/product-list.jsp");
+        mv.setViewName("product-list");
         return mv;
     }
 }

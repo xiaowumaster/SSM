@@ -281,7 +281,7 @@
 							<div class="pull-left">
 								<div class="form-group form-inline">
 									<div class="btn-group">
-										<button type="button" class="btn btn-default" title="新建">
+										<button type="button" class="btn btn-default" title="新建" onclick="location.href='${pageContext.request.contextPath}/pages/product-add.jsp'">
 											<i class="fa fa-file-o"></i> 新建
 										</button>
 										<button type="button" class="btn btn-default" title="删除">
@@ -362,8 +362,8 @@
 			<div class="pull-right hidden-xs">
 				<b>Version</b> 1.0.8
 			</div>
-			<strong>Copyright &copy; 2014-2017 <a
-				href="http://www.itcast.cn">研究院研发部</a>.
+			<strong>Copyright &copy; 2019 <a
+				href="http://www.itcast.cn">小吴</a>.
 			</strong> All rights reserved.
 		</footer>
 		<!-- 底部导航 /-->
